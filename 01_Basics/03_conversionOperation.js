@@ -62,6 +62,8 @@ number1="22"       // Number
 number2="22a"      // String
 number3=true;      // Boolean
  number4=22;        //Number 
+ number=0;
+ number6=""
 
 
 
@@ -70,6 +72,8 @@ console.log(Boolean(number1));
 console.log(Boolean(number2));     
 console.log(Boolean(number3));     
 console.log(Boolean(number4));     // 22
+console.log(Boolean(number));
+console.log(Boolean(number6));
 
 
 
@@ -78,6 +82,15 @@ console.log(typeof(Boolean(number1)));
 console.log(typeof(Boolean(number2)));
 console.log(typeof(Boolean(number3)));
 console.log(typeof(Boolean(number4)));     // 22
+
+
+// Addition operation on String and Number 
+
+console.log(1+"2");
+console.log("1"+2);
+console.log("1"+"2");
+console.log("1"+2+2);
+console.log(1+2+"2");
 
 
 
