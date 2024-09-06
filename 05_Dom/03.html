@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM BY CHAI AUR CODE</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="week">
+        <div class="days">Sunday</div>
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+        <div class="days">Friday</div>
+        <div class="days">Saturday</div>
+    </div>
+
+    <script>
+        const x=document.querySelector('.week')
+        console.log(x);
+        console.log(x.children);
+        console.log(x.children[0]);
+
+
+        console.log("LOOP");
+        
+
+        for (let i=0;i<x.children.length;i++) {
+           console.log(x.children[i].innerHTML);
+           
+        }
+
+        // Finding any child by using the parent 
+        console.log(x.firstElementChild.innerHTML);
+        console.log(x.lastElementChild.innerHTML);
+
+        // Finding the parent and its sibling using the parent 
+        const dayOne=document.querySelector('.days')
+        console.log(dayOne.innerHTML);
+        console.log(dayOne.parentElement.innerHTML);
+        console.log(dayOne.nextElementSibling.innerHTML);
+        
+        // The number of children having the parents it is the number of elements present under the parents 
+
+
+        console.log("The numnber of child or element tag present is ",x.childNodes);
+        
+
+
+
+
+
+
+
+        
+
+        
+        
+    
+
+
+
+
+    </script>
+</body>
+</html>
